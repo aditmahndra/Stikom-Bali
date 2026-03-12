@@ -62,8 +62,8 @@ a {
 }
 
 .header .menu .list a .drop {
-  width: 15px;
-  height: 15px;
+  width: 11px;
+  height: 11px;
   margin-left: 5px;
   margin-bottom: 4px;
 }
@@ -134,13 +134,12 @@ a {
     padding:25px 30px;
     border-radius:15px;
     width:380px;
-
     display:none;
     flex-direction:column;
     gap:18px;
     z-index: 9999;
-
     box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
 }
 
 .modal-mahasiswa a{
