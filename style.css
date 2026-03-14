@@ -32,20 +32,24 @@ a {
   object-position: center;
 }
 
-.btn-login {
+.btn-login-nav {
   border: 2px solid #ffc107;
   border-radius: 20px;
   padding: 10px 40px;
+  font-size: 20px;
+  font-weight: 600;
   background: transparent;
 }
 .btn {
   display: flex;
   gap: 20px;
 }
-.btn-register {
+.btn-register-nav {
   background: #ffc107;
   border-radius: 20px;
   padding: 10px 40px;
+  font-size: 20px;
+  font-weight: 600;
   border: none;
 }
 
@@ -58,6 +62,8 @@ a {
 .header .menu .list {
   gap: 20px;
   display: flex;
+  font-size: 20px;
+  font-weight: 500;
   align-items: center;
 }
 
@@ -145,7 +151,7 @@ a {
 .modal-mahasiswa a{
     text-decoration:none;
     color:#111;
-    font-size:20px;
+    font-size:18px;
     font-weight:500;
 }
 
@@ -163,12 +169,15 @@ background:#0f2a47;
 border-radius:15px;
 overflow:hidden;
 border:2px solid #ffc107;
+display: flex;
+flex-direction: row;
 }
 
-.pendaftaran-img img{
-width:100%;
-height:100%;
-object-fit:cover;
+.pendaftaran-img img {
+  display: block;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
 }
 
 .pendaftaran-content{
@@ -218,12 +227,81 @@ background:#e6ac00;
 color:black;
 }
 
-.col-lg-10{
-  flex: 0 0 auto;
-  width: 1550px;
-  height: 825px;
-}
 
 .pendaftaran-box{
   border-radius: 30px;
+}
+
+@media (max-width: 1200px) {
+  .pendaftaran-img img {
+    height: 100.3vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .pendaftaran-img img {
+    height: 100%;
+  }
+}
+
+/* Style Registrasi */
+/* REGISTRASI CIK */
+
+/* container */
+.col-lg-8{
+width: 1200px;
+margin: 0 360px 0 360px;
+}
+/* BOX */
+
+.register-box{
+background:#f2f2f2;
+padding:45px 150px;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+/* LOGO */
+
+.register-logo{
+text-align:center;
+margin-bottom:40px;
+}
+
+.register-logo img{
+width:120px;
+height: 151px;
+margin-bottom:10px;
+}
+
+.register-logo h2{
+font-weight:600;
+font-size: 40px;
+}
+
+
+/* FORM */
+
+.form-register{
+border-radius:10px;
+height:65px;
+border:2px solid #333;
+}
+
+
+/* BUTTON */
+
+.btn-register{
+background:#ffc107;
+border:none;
+padding:9.5px 50px;
+border-radius:30px;
+font-weight:500;
+font-size: 22px;
+transition:0.3s;
+}
+
+.btn-register:hover{
+background:#e0a800;
 }
