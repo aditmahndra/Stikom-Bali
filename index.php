@@ -1,55 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>ITB STIKOM Bali</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<?php include 'header.php'; ?>
 
 
-
-</head>
-
-<body>
-
-    <?php include 'header.php'; ?>
-
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="hero-box">
-                        <img src="img/banner.jpg">
-                        <div class="hero-overlay"></div>
-                        <div class="hero-content">
-                            <h1>
-                                Pelajari <span>Skill & Pengetahuan</span><br>
-                                Tentang <span>IT & Entrepreneur</span> Sekarang
-                            </h1>
-                            <p>
-                                Belajar dari Para Akademisi & Praktisi yang berpengalaman di bidangnya dan dapatkan
-                                skill keterampilan yang dibutuhkan di Dunia Industri untuk membangun karir masa depan.
-                            </p>
-                            <button class="btn-daftar">
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hero-box">
+                    <img src="img/banner.jpg">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1>
+                            Pelajari <span>Skill & Pengetahuan</span><br>
+                            Tentang <span>IT & Entrepreneur</span> Sekarang
+                        </h1>
+                        <p>
+                            Belajar dari Para Akademisi & Praktisi yang berpengalaman di bidangnya dan dapatkan
+                            skill keterampilan yang dibutuhkan di Dunia Industri untuk membangun karir masa depan.
+                        </p>
+                        <a href="pendaftaran.php">
+                            <button class="btn-daftar-home">
                                 Daftar Sekarang
                             </button>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 </body>
-
+<script src="script.js" ></script>
 
 </html>

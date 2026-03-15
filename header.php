@@ -1,3 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ITB STIKOM Bali</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+
+</head>
+
+<body>
+
 <section class="header">
         <div class="container-fluid">
             <div class="row">
@@ -7,14 +28,16 @@
                 <div class="col-md-6">
                     <div class="menu">
                         <div class="list">
-                            <a href="#">Home</a>
+                            <a href="index.php">Home</a>
                             <a href="#">Data Mahasiswa
                                 <img src="img/down.png" class="drop" alt="">
                             </a>
                         </div>
                         <div class="btn">
                             <button class="btn-login-nav">Login</button>
+                            <a href="proses-registrasi.php">
                             <button class="btn-register-nav">Register</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -28,30 +51,3 @@
     <a href="#">Tabel Data Mahasiswa D3, S1</a>
 </div>
 
-<script>
-
-    const btn = document.querySelectorAll('.list a')[1];
-    const modal = document.getElementById('modalMahasiswa');
-
-    btn.addEventListener("click", function (e) {
-        e.preventDefault();
-        e.stopPropagation(); // supaya klik tombol tidak dianggap klik luar
-
-        if (modal.style.display === "flex") {
-            modal.style.display = "none";
-        } else {
-            modal.style.display = "flex";
-        }
-    });
-
-    // supaya klik di dalam modal tidak menutupnya
-    modal.addEventListener("click", function (e) {
-        e.stopPropagation();
-    });
-
-    // klik di luar modal
-    document.addEventListener("click", function () {
-        modal.style.display = "none";
-    });
-
-</script>
