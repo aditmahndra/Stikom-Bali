@@ -34,8 +34,10 @@
                             </a>
                         </div>
                         <div class="btn">
+                            <a href="login.php">
                             <button class="btn-login-nav">Login</button>
-                            <a href="proses-registrasi.php">
+                        </a>
+                            <a href="registrasi.php">
                             <button class="btn-register-nav">Register</button>
                             </a>
                         </div>

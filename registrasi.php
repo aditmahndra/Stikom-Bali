@@ -25,8 +25,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="register-box">
-                        <div class="register-logo">
+                    <div class="form-box">
+                        <div class="form-logo">
                             <img src="img/logo-stikom.png">
                             <h2>Register</h2>
                         </div>
@@ -35,24 +35,24 @@
 
                             <div class="mb-4">
                                 <label class="form-label">Nama Lengkap</label>
-                                <input type="text" name="nama" class="form-control form-register"
+                                <input type="text" name="nama" class="form-control form-input"
                                     placeholder="Masukkan Nama Lengkap" required>
                             </div>
 
                             <div class="mb-4">
                                 <label class="form-label">Email / No Ponsel</label>
-                                <input type="text" name="email" class="form-control form-register"
+                                <input type="text" name="email" class="form-control form-input"
                                     placeholder="Masukkan Email / No Ponsel" required>
                             </div>
 
                             <div class="mb-4">
                                 <label class="form-label">Password</label>
-                                <input type="password" name="password" class="form-control form-register"
+                                <input type="password" name="password" class="form-control form-input"
                                     placeholder="Masukkan Password" required>
                             </div>
 
                             <div class="text-center">
-                                <button type="submit" class="btn-register">
+                                <button type="submit" class="btn-submit">
                                     Register
                                 </button>
                             </div>
