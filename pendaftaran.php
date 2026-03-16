@@ -20,13 +20,13 @@
                                         untuk membantu anda dalam meningkatkan skills dan karir di bidang teknologi.
                                     </p>
                                     <div class="btn-group-daftar">
-                                        <a href="#" class="btn-daftar">
+                                        <a href="pendaftaran-dual-degree.php" class="btn-daftar">
                                             Form Pendaftaran Online Dual Degree
                                         </a>
-                                        <a href="#" class="btn-daftar">
-                                            Form Pendaftaran Online D3 dan S1
+                                        <a href="pendaftaran-s1-d3.php" class="btn-daftar">
+                                            Form Pendaftaran Online S1 dan D3
                                         </a>
-                                        <a href="#" class="btn-daftar">
+                                        <a href="pendaftaran-s2.php" class="btn-daftar">
                                             Form Pendaftaran Online S2
                                         </a>
                                     </div>

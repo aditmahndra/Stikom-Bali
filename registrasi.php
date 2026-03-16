@@ -24,7 +24,7 @@
     <section class="register-section">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
+                <div class="col-lg-12 form-container">
                     <div class="form-box">
                         <div class="form-logo">
                             <img src="img/logo-stikom.png">

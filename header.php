@@ -53,3 +53,4 @@
     <a href="#">Tabel Data Mahasiswa D3, S1</a>
 </div>
 
+<script src="script.js" ></script>
