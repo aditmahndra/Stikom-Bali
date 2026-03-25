@@ -89,9 +89,9 @@ class="form-control form-input">
 <select name="prodi" class="form-control form-input">
 
 <option value=""disabled selected>Pilih Prodi</option>
-<option>Sistem Informasi</option>
-<option>Teknik Informatika</option>
-<option>Bisnis Digital</option>
+<option>Program Dual Degree Kelas International, B.IT., S.Kom</option>
+<option>DUAL DEGREE NASIONAL STT BANDUNG</option>
+<option>DUAL DEGREE INTERNASIONAL - DNUI</option>
 
 </select>
 </div>

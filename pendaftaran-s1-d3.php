@@ -89,9 +89,11 @@ class="form-control form-input">
 <select name="prodi" class="form-control form-input">
 
 <option value=""disabled selected>Pilih Prodi</option>
-<option>Sistem Informasi</option>
-<option>Teknik Informatika</option>
-<option>Bisnis Digital</option>
+<option>S1 - Sistem Informasi</option>
+<option>S1 - Sistem Komputer</option>
+<option>S1 - Teknologi Informasi</option>
+<option>D3 - Manajemen Informatika</option>
+<option>S1 - Bisnis Digital, S.Bis</option>
 
 </select>
 </div>

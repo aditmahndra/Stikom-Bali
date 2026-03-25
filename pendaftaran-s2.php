@@ -89,9 +89,9 @@ class="form-control form-input">
 <select name="prodi" class="form-control form-input">
 
 <option value=""disabled selected>Pilih Prodi</option>
-<option>Sistem Informasi</option>
-<option>Teknik Informatika</option>
-<option>Bisnis Digital</option>
+<option>S2 - Sistem Informasi</option>
+<option>S2 - Teknik Informatika</option>
+<option>S2 - Bisnis Digital</option>
 
 </select>
 </div>
