@@ -33,7 +33,7 @@
                                 <img src="img/down.png" class="drop" alt="">
                             </a>
                         </div>
-                        <div class="btn">
+                        <div class="btn-header">
                             <a href="login.php">
                             <button class="btn-login-nav">Login</button>
                         </a>

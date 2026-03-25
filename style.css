@@ -40,7 +40,7 @@ a {
   font-weight: 600;
   background: transparent;
 }
-.btn {
+.btn-header {
   display: flex;
   gap: 20px;
 }
@@ -73,8 +73,8 @@ a {
 }
 
 .header .menu .list a .drop {
-  width: 18px;
-  height: 18px;
+  width: 12px;
+  height: 12px;
   margin-left: 5px;
   margin-bottom: 4px;
 }
@@ -261,9 +261,9 @@ a {
 
 /* container */
 
- .form-container {
-  max-width:1200px;
-margin:auto;
+.form-container {
+  max-width: 1200px;
+  margin: auto;
 }
 /* BOX */
 
@@ -335,27 +335,27 @@ margin:auto;
 }
 /* style H2 form pendaftaran mahasiswa */
 
-.form-title{
-text-align:center;
-margin-bottom:40px;
+.form-title {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.form-title h1{
-font-size:36px;
-font-weight:600;
+.form-title h1 {
+  font-size: 36px;
+  font-weight: 600;
 }
 
-.form-title h2{
-font-size:36px;
-font-weight:700;
-color:#1aa6c9;
+.form-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1aa6c9;
 }
 
-.form-line{
-width:100%;
-height:3px;
-background:#000;
-margin:20px 0 30px 0;
+.form-line {
+  width: 100%;
+  height: 3px;
+  background: #000;
+  margin: 20px 0 30px 0;
 }
 
 /* dropdown style */
@@ -372,4 +372,132 @@ select.form-input {
 
   padding-right: 12px;
   cursor: pointer;
+}
+
+/* CSS TABEL DATA */
+
+.data-table {
+  padding: 10px 20px 100px 20px;
+}
+
+/* SEARCH BOX */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* INPUT */
+.search-box input {
+  padding: 15px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 300px;
+  background: #eee;
+  font-size: 13px;
+}
+
+/* BUTTON */
+.btn-search {
+  background: #f7c100;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-search img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.btn-search:hover {
+  background: #e6b000;
+}
+
+.data-table .mac-header {
+  margin: 25px 30px 25px 0;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  background: #fff;
+  padding: 1px 30px 35px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-bottom: 1px solid #eee;
+  border-radius: 12px;
+}
+
+thead {
+  background: #f7c100;
+}
+
+thead th {
+  color: #000;
+  padding: 14px;
+  font-size: 13px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+thead th:first-child {
+  border-top-left-radius: 12px;
+}
+
+thead th:last-child {
+  border-top-right-radius: 12px;
+}
+
+.data-table .admin thead th:last-child {
+  border-top-right-radius: 12px;
+  width: 170px !important;
+}
+
+tbody td {
+  padding: 12px;
+  font-size: 13px;
+  color: #333;
+  text-align: center;
+  word-break: break-word;
+}
+
+tbody tr:hover {
+  background: #f9f9ff;
+}
+
+.aksi {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.data-table .edit {
+  background-color: #00cbf8;
+  padding: 10px;
+}
+.data-table .hapus {
+  background-color: #ff6666;
+  padding: 10px;
+}
+.data-table table img {
+  height: 28px;
+  width: 28px;
+  object-fit: cover;
+  object-position: center;
 }
