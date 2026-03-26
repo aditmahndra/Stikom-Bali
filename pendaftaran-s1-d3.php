@@ -1,3 +1,8 @@
+<?php 
+require_once 'config/database.php';
+require_once 'config/session_check.php';
+redirectIfNotLoggedIn(); // Hanya bisa diakses setelah login
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,27 +79,23 @@ class="form-control form-input">
 <!-- JENIS KELAMIN -->
 <div class="col-md-6 mb-4">
 <label class="form-label">Jenis Kelamin</label>
-<select name="jk" class="form-control form-input">
-
-<option value=""disabled selected>Pilih Jenis Kelamin</option>
-<option>Laki-laki</option>
-<option>Perempuan</option>
-
+<select name="jk" class="form-control form-input" required>
+<option value="" disabled selected>Pilih Jenis Kelamin</option>
+<option value="Laki-laki">Laki-laki</option>
+<option value="Perempuan">Perempuan</option>
 </select>
 </div>
 
 <!-- PRODI -->
 <div class="col-md-6 mb-4">
 <label class="form-label">Prodi</label>
-<select name="prodi" class="form-control form-input">
-
-<option value=""disabled selected>Pilih Prodi</option>
-<option>S1 - Sistem Informasi</option>
-<option>S1 - Sistem Komputer</option>
-<option>S1 - Teknologi Informasi</option>
-<option>D3 - Manajemen Informatika</option>
-<option>S1 - Bisnis Digital, S.Bis</option>
-
+<select name="prodi" class="form-control form-input" required>
+<option value="" disabled selected>Pilih Prodi</option>
+<option value="S1 - Sistem Informasi">S1 - Sistem Informasi</option>
+<option value="S1 - Sistem Komputer">S1 - Sistem Komputer</option>
+<option value="S1 - Teknologi Informasi">S1 - Teknologi Informasi</option>
+<option value="D3 - Manajemen Informatika">D3 - Manajemen Informatika</option>
+<option value="S1 - Bisnis Digital, S.Bis">S1 - Bisnis Digital, S.Bis</option>
 </select>
 </div>
 

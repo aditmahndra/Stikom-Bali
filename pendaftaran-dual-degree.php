@@ -1,3 +1,8 @@
+<?php 
+require_once 'config/database.php';
+require_once 'config/session_check.php';
+redirectIfNotLoggedIn(); // Hanya bisa diakses setelah login
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,25 +79,21 @@ class="form-control form-input">
 <!-- JENIS KELAMIN -->
 <div class="col-md-6 mb-4">
 <label class="form-label">Jenis Kelamin</label>
-<select name="jk" class="form-control form-input">
-
-<option value=""disabled selected>Pilih Jenis Kelamin</option>
-<option>Laki-laki</option>
-<option>Perempuan</option>
-
+<select name="jk" class="form-control form-input" required>
+<option value="" disabled selected>Pilih Jenis Kelamin</option>
+<option value="Laki-laki">Laki-laki</option>
+<option value="Perempuan">Perempuan</option>
 </select>
 </div>
 
 <!-- PRODI -->
 <div class="col-md-6 mb-4">
 <label class="form-label">Prodi</label>
-<select name="prodi" class="form-control form-input">
-
-<option value=""disabled selected>Pilih Prodi</option>
-<option>Program Dual Degree Kelas International, B.IT., S.Kom</option>
-<option>DUAL DEGREE NASIONAL STT BANDUNG</option>
-<option>DUAL DEGREE INTERNASIONAL - DNUI</option>
-
+<select name="prodi" class="form-control form-input" required>
+<option value="" disabled selected>Pilih Prodi</option>
+<option value="Program Dual Degree Kelas International, B.IT., S.Kom">Program Dual Degree Kelas International, B.IT., S.Kom</option>
+<option value="DUAL DEGREE NASIONAL STT BANDUNG">DUAL DEGREE NASIONAL STT BANDUNG</option>
+<option value="DUAL DEGREE INTERNASIONAL - DNUI">DUAL DEGREE INTERNASIONAL - DNUI</option>
 </select>
 </div>
 

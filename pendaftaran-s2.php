@@ -1,3 +1,8 @@
+<?php 
+require_once 'config/database.php';
+require_once 'config/session_check.php';
+redirectIfNotLoggedIn();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,45 +59,41 @@ Calon Mahasiswa Baru T.A 2026/2027
 <div class="col-md-6 mb-4">
 <label class="form-label">Nama Lengkap</label>
 <input type="text" name="nama" class="form-control form-input"
-placeholder="Masukkan Nama Lengkap">
+placeholder="Masukkan Nama Lengkap" required>
 </div>
 
 <!-- EMAIL -->
 <div class="col-md-6 mb-4">
 <label class="form-label">Email</label>
 <input type="email" name="email" class="form-control form-input"
-placeholder="Masukkan Email Anda">
+placeholder="Masukkan Email Anda" required>
 </div>
 
 <!-- TANGGAL LAHIR -->
 <div class="col-md-6 mb-4">
 <label class="form-label">Tanggal Lahir</label>
 <input type="date" name="tanggal_lahir"
-class="form-control form-input">
+class="form-control form-input" required>
 </div>
 
 <!-- JENIS KELAMIN -->
 <div class="col-md-6 mb-4">
 <label class="form-label">Jenis Kelamin</label>
-<select name="jk" class="form-control form-input">
-
-<option value=""disabled selected>Pilih Jenis Kelamin</option>
-<option>Laki-laki</option>
-<option>Perempuan</option>
-
+<select name="jk" class="form-control form-input" required>
+<option value="" disabled selected>Pilih Jenis Kelamin</option>
+<option value="Laki-laki">Laki-laki</option>
+<option value="Perempuan">Perempuan</option>
 </select>
 </div>
 
 <!-- PRODI -->
 <div class="col-md-6 mb-4">
 <label class="form-label">Prodi</label>
-<select name="prodi" class="form-control form-input">
-
-<option value=""disabled selected>Pilih Prodi</option>
-<option>S2 - Sistem Informasi</option>
-<option>S2 - Teknik Informatika</option>
-<option>S2 - Bisnis Digital</option>
-
+<select name="prodi" class="form-control form-input" required>
+<option value="" disabled selected>Pilih Prodi</option>
+<option value="S2 - Sistem Informasi">S2 - Sistem Informasi</option>
+<option value="S2 - Teknik Informatika">S2 - Teknik Informatika</option>
+<option value="S2 - Bisnis Digital">S2 - Bisnis Digital</option>
 </select>
 </div>
 
@@ -100,14 +101,14 @@ class="form-control form-input">
 <div class="col-md-6 mb-4">
 <label class="form-label">No.Ponsel</label>
 <input type="text" name="nohp" class="form-control form-input"
-placeholder="Masukkan No.Ponsel">
+placeholder="Masukkan No.Ponsel" required>
 </div>
 
 </div>
 
 <div class="text-center mt-4">
 
-<button class="btn-submit">
+<button type="submit" class="btn-submit">
 Daftar Sekarang
 </button>
 

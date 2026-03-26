@@ -147,7 +147,7 @@ a {
 .modal-mahasiswa {
   position: absolute;
   top: 130px;
-  right: 350px;
+  right: 340px;
   background: #fff;
   padding: 25px 30px;
   border-radius: 15px;
@@ -500,4 +500,137 @@ tbody tr:hover {
   width: 28px;
   object-fit: cover;
   object-position: center;
+}
+
+/* User Welcome Section */
+.user-welcome {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f5f5f5;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+
+.welcome-text {
+    font-weight: 500;
+    color: #022b4a;
+}
+
+.btn-logout-nav {
+    background: #ff4444;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-logout-nav:hover {
+    background: #cc0000;
+}
+
+/* Alert Messages */
+.alert {
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Table Controls */
+.table-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.table-selector select {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .user-welcome {
+        padding: 5px 10px;
+    }
+    
+    .welcome-text {
+        font-size: 14px;
+    }
+    
+    .btn-logout-nav {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+}
+
+/* Alert styling */
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    min-width: 300px;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.btn-close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-close:hover {
+    opacity: 0.75;
 }
