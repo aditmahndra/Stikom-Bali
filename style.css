@@ -384,7 +384,6 @@ select.form-input {
 .search-box {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
 }
 
 /* INPUT */
@@ -633,4 +632,8 @@ tbody tr:hover {
 
 .btn-close:hover {
     opacity: 0.75;
+}
+
+.alert-dismissible .btn-close {
+  padding: 10px !important;
 }

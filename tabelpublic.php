@@ -67,13 +67,14 @@ $data = $stmt->fetchAll();
                 </form>
             </div>
             
-            <div class="table-selector" style="margin-top: 10px;">
+            <div class="table-selector">
                 <label for="tableSelect">Pilih Program Studi: </label>
                 <select id="tableSelect" onchange="window.location.href='?table='+this.value">
                     <option value="s2" <?php echo $table == 's2' ? 'selected' : ''; ?>>Mahasiswa S2</option>
                     <option value="s1_d3" <?php echo $table == 's1_d3' ? 'selected' : ''; ?>>Mahasiswa S1/D3</option>
                     <option value="dual_degree" <?php echo $table == 'dual_degree' ? 'selected' : ''; ?>>Mahasiswa Dual Degree</option>
                 </select>
+                <img src="img/down.png" alt="">
             </div>
         </div>
         
@@ -126,15 +127,31 @@ $data = $stmt->fetchAll();
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
+    position: relative;
 }
 
 .table-selector select {
-    padding: 8px 15px;
+    padding: 15px 15px;
     border-radius: 8px;
     border: 1px solid #ddd;
     background: white;
     cursor: pointer;
+    font-size: 15px;
+    margin-left: 10px;
+    appearance: none;
+    padding-right: 40px;
 }
+
+.table-selector img {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    margin-bottom: 4px;
+    top: 21px;
+    right: 18px;
+}
+
 
 .table-wrapper {
     overflow-x: auto;
